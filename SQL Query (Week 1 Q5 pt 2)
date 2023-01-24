@@ -1,0 +1,4 @@
+#SQL code for Q5 pt2 which gives 254 as the answer
+SELECT COUNT(*)
+FROM green_taxi_data_homework
+WHERE lpep_pickup_datetime::date = '2019/01/01' AND passenger_count = 3
