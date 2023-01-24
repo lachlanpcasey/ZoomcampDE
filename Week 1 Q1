@@ -1,0 +1,3 @@
+#The following are the command prompts run to give the answer
+#This single line gives an output which, next to -f, has --iidfile string, with the explanation 'Write the image ID to the file'
+docker build --help
