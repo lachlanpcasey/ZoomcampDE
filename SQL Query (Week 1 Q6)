@@ -1,0 +1,8 @@
+#Code for week 1 Question 6 answer
+#This is the code that gives the answer Long Island City/Queens Plaza
+select t2."Zone" 
+from green_taxi_data_homework g 
+left join taxi_zone_lookup t on g."PULocationID"=t."LocationID" 
+left join taxi_zone_lookup t2 on g."DOLocationID" = t2."LocationID" 
+WHERE t."Zone" = 'Astoria' 
+ORDER BY tip_amount desc limit 1
