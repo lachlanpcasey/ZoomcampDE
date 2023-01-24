@@ -1,0 +1,6 @@
+#choose the top answer which is 2019/01/15 distance of 117.99
+SELECT lpep_pickup_datetime::date ,MAX(trip_distance)
+FROM green_taxi_data_homework
+GROUP BY lpep_pickup_datetime::date
+ORDER BY MAX DESC
+LIMIT 5
