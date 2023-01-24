@@ -1,0 +1,5 @@
+docker build -t test .
+docker run -it test
+#After this is run, you will be within bash
+#pip list then generates 3 results
+pip list
