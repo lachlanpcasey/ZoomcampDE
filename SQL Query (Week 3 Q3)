@@ -1,0 +1,2 @@
+select count(*) from `fhv_dataset_week_3_LC.fhv_tripdata_2019_unpartitioned`
+where PUlocationID is null and DOlocationID is null
