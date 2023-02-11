@@ -1,0 +1,1 @@
+select count(*) from `fhv_dataset_week_3_LC.fhv_tripdata_2019`
