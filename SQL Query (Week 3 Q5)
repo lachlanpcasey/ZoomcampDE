@@ -1,0 +1,8 @@
+-- No partitioning and clustering
+select distinct affiliated_base_number 
+from `fhv_dataset_week_3_LC.fhv_tripdata_2019_unpartitioned`
+where pickup_datetime >= date('2019-03-01') and pickup_datetime<= date('2019-03-31')
+-- Partitioning and clustering
+select distinct affiliated_base_number 
+from `fhv_dataset_week_3_LC.fhv_tripdata_2019_partitoned_clustered`
+where pickup_datetime >= date('2019-03-01') and pickup_datetime<= date('2019-03-31')
