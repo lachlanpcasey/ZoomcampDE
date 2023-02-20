@@ -22,5 +22,7 @@ models:
         tests:
             - not_null:
                 severity: error
-      
+  - name: fact_trips_fhv
+    description: >
+      A table of all fhv trips with a PU location and DO location.
       
