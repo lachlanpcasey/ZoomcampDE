@@ -5,7 +5,9 @@ with fhv_trips as (
     from {{ ref('stg_fhv_tripdata') }}
 )
 , dim_zones as (
-    select * from {{ ref('dim_zones') }}
+    select * 
+    from {{ ref('dim_zones') }}
+    where borough != "Unknown"
 )
 
 select
